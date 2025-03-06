@@ -25,6 +25,8 @@ public class Bookstore<T extends Literature> {
         store.printItems(); // Should print titles from different item types
         store.printBookTitle("Random book title");
         store.printTitlesInAlphaOrder();
+        //fn should only return "National Geographic" and "Spider-Man" since "N" and "S" are before "T"
+        store.printBooks(book -> book.getTitle().compareTo("Times Magazine") < 1);
 
         // Create a List to hold Novel objects
         List<Novel> novelCollection = new ArrayList<>();
@@ -46,10 +48,20 @@ public class Bookstore<T extends Literature> {
         items.add(item);
     }
 
-    public void printItems() {
-        for(T item : items) {
-            System.out.println(item.getTitle());
+    public void printBooks(BookFilter filter) {
+        System.out.println("\n----printBooks()----");
+        for (T item: items) {
+            if (filter.filter(item)) {
+                System.out.println(item);
+            }
         }
+
+    }
+
+    public void printItems() {
+
+        System.out.println("----printItems()----");
+        items.forEach(System.out::println);
     }
 
     public void printBookTitle(final String title) {
@@ -61,6 +73,7 @@ public class Bookstore<T extends Literature> {
     }
 
     public void printTitlesInAlphaOrder() {
+        System.out.println("\n----printTitlesInAlphaOrder()----");
         items.sort(Comparator.comparing(T::getTitle));
         items.forEach(item -> System.out.println(item.getTitle()));
     }
@@ -82,19 +95,25 @@ public class Bookstore<T extends Literature> {
 
     // Inner class
     class NovelStatistics {
+        public void sortByTitle() {
+
+            items.sort(Comparator.comparing(T::getTitle));
+
+        }
+
         public double averageTitleLength() {
             int totalLength = 0;
             for (final T item : items) {
                 totalLength += item.getTitle().length();
             }
-            return (double) totalLength / items.size();
+            return (items.size() > 0) ? (double) totalLength / items.size() : 0;
         }
     }
 
     // Static nested class
     static class BookstoreInfo {
         public void displayInfo(final String storeName, final int itemCount) {
-            System.out.println("BookStore: " + storeName + ", Items: " + itemCount);
+            System.out.println("\nBookStore: " + storeName + ", Items: " + itemCount);
         }
     }
 }

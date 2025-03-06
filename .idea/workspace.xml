@@ -4,34 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="" />
+    <list default="true" id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/BookFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/COMP2522_LAB7_Joseph_Grace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/COMP2522_LAB7_Joseph_Grace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code/BookFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/ComicBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/ComicBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Literature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Literature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Magazine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Bookstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Bookstore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ComicBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ComicBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Novel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JLouwerse27/COMP2522_LAB7_Joseph_Grace.git&quot;,
+    &quot;accountId&quot;: &quot;ae1ac6fb-16b2-4714-a409-e13f8d57581c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2tuq3zh3iimPWMPDeY1EoEnovLJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Bookstore.executor": "Run"
+    "Application.Bookstore.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/josep/Documents/New Github/COMP2522_LAB7_Joseph_Grace",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.22398844",
+    "project.structure.side.proportion": "0.19185282",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Bookstore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Bookstore" />
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="src" />
-      <option name="filePath" />
+      <module name="COMP2522_LAB7_Joseph_Grace" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -42,7 +85,23 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="" />
+      <created>1741212111098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741212111098</updated>
+    </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="store" />
+        <watch expression="store" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

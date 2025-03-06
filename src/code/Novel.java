@@ -92,6 +92,6 @@
     @Override
     public String toString()
     {
-        return ("Title: " + this.title);
+        return (this.title);
     }
 }
