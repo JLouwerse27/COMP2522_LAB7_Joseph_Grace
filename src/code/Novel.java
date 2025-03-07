@@ -15,6 +15,7 @@
 
     // Instance Variable Declarations
     private final String title;
+    private final int yearPublished;
 
     // Static Final constants declarations.
     private static final int CURRENT_YEAR = 2025;
@@ -29,11 +30,12 @@
      *
      * @param title the title of the Novel.
      */
-    public Novel(String title)
+    public Novel(String title, int yearPublished)
     {
         validateTitle(title);
-
+        //validateYear(year);
         this.title = title;
+        this.yearPublished = yearPublished;
     }
 
     // VALIDATION METHODS
@@ -65,6 +67,12 @@
     public final String getTitle()
     {
         return title;
+    }
+
+    @Override
+    public int getYearPublished()
+    {
+        return yearPublished;
     }
 
     // OTHER METHODS

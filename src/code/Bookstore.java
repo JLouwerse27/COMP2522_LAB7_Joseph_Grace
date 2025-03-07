@@ -7,8 +7,8 @@ import java.util.function.Predicate;
 /**
  * Describes a Bookstore object. Contains the main method
  *
- * @author ...
- * @version ...
+ * @author Joseph Louwerse, Grace Jung
+ * @version 1.0
  */
 public class Bookstore<T extends Literature> {
     private List<T> items = new ArrayList<>();
@@ -24,14 +24,15 @@ public class Bookstore<T extends Literature> {
 
         final Bookstore<Literature> store = new Bookstore<>("My Store");
 
-        store.addItem(new Novel("War and Peace"));
-        store.addItem(new ComicBook("Spider-Man"));
-        store.addItem(new Magazine("National Geographic"));
+        store.addItem(new Novel("War and Peace", 1951));
+        store.addItem(new ComicBook("Spider-Man", 1962));
+        store.addItem(new Magazine("National Geographic", 1940));
         store.printItems(); // Should print titles from different item types
         store.printBookTitle("Random book title");
         store.printTitlesInAlphaOrder();
         //fn should only return "National Geographic" and "Spider-Man" since "N" and "S" are before "T"
         store.printBooks(book -> book.getTitle().compareTo("Times Magazine") < 1);
+
 
         // Create a List to hold Novel objects
         List<Novel> novelCollection = new ArrayList<>();
@@ -44,6 +45,7 @@ public class Bookstore<T extends Literature> {
 
         // Instantiate the inner class
         Bookstore.NovelStatistics ns = store.new NovelStatistics();
+        ns.sortByTitleLength();
         double avgTitleLength = ns.averageTitleLength();
         System.out.println("Average title length: " + avgTitleLength);
 
@@ -69,6 +71,7 @@ public class Bookstore<T extends Literature> {
     }
 
     public void printBooks(BookFilter filter) {
+        Predicate<T> oldBooks = book -> book.getYearPublished() < 1950;
         Consumer<T> bookConsumer = book -> {
             if (filter.filter(book))
                 System.out.println(book);
@@ -121,10 +124,11 @@ public class Bookstore<T extends Literature> {
 
     // Inner class
     class NovelStatistics {
-        public void sortByTitle() {
 
-            items.sort(Comparator.comparing(T::getTitle));
-
+        public void sortByTitleLength() {
+            System.out.println("---sortByTitleLength()---");
+            items.sort(Comparator.comparingInt(novel -> novel.getTitle().length()));
+            items.forEach(System.out::println);
         }
 
         public double averageTitleLength() {

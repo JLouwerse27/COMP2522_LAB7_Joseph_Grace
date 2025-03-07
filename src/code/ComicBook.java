@@ -2,13 +2,15 @@ public class ComicBook
                 extends Literature
 {
     // VARIABLE DECLARATIONS
-    private String title;
+    private final String title;
+    private final int yearPublished;
 
     // CONSTRUCTORS
-    public ComicBook(String title)
+    public ComicBook(String title, int yearPublished)
     {
         validateTitle(title);
         this.title = title;
+        this.yearPublished = yearPublished;
     }
 
     // VALIDATION METHODS
@@ -36,6 +38,12 @@ public class ComicBook
     @Override
     public final String getTitle() {
         return title;
+    }
+
+    @Override
+    public int getYearPublished()
+    {
+        return yearPublished;
     }
 
     /**

@@ -2,18 +2,26 @@ public class Magazine
         extends Literature
 {
     // VARIABLE DECLARATIONS
-    private String title;
+    private final String title;
+    private final int yearPublished;
 
     // CONSTRUCTORS
-    public Magazine(String title)
+    public Magazine(String title, int yearPublished)
     {
         this.title = title;
+        this.yearPublished = yearPublished;
     }
 
     // OTHER METHODS
     @Override
     public String getTitle() {
         return title;
+    }
+
+    @Override
+    public int getYearPublished()
+    {
+        return yearPublished;
     }
 
     /**
