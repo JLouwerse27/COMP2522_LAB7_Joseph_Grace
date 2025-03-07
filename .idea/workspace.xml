@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/BookFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/COMP2522_LAB7_Joseph_Grace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/COMP2522_LAB7_Joseph_Grace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/BookFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/ComicBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/ComicBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Literature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Literature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Magazine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Magazine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Bookstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Bookstore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/ComicBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ComicBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Magazine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Novel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Novel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +24,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/JLouwerse27/COMP2522_LAB7_Joseph_Grace.git&quot;,
-    &quot;accountId&quot;: &quot;ae1ac6fb-16b2-4714-a409-e13f8d57581c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JLouwerse27/COMP2522_LAB7_Joseph_Grace.git",
+    "accountId": "7a2a5674-04e1-467c-9427-19016aac2a96"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -59,14 +48,22 @@
   "keyToString": {
     "Application.Bookstore.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/josep/Documents/New Github/COMP2522_LAB7_Joseph_Grace",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.22398844",
     "project.structure.side.proportion": "0.19185282",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons"
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -85,6 +82,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,8 +98,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741212111098</updated>
+      <workItem from="1741319623414" duration="3969000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

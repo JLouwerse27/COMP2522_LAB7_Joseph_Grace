@@ -1,4 +1,7 @@
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 
 /**
@@ -18,7 +21,9 @@ public class Bookstore<T extends Literature> {
 
     // MAIN METHOD
     public static void main(final String[] args) {
+
         final Bookstore<Literature> store = new Bookstore<>("My Store");
+
         store.addItem(new Novel("War and Peace"));
         store.addItem(new ComicBook("Spider-Man"));
         store.addItem(new Magazine("National Geographic"));
@@ -41,6 +46,21 @@ public class Bookstore<T extends Literature> {
         Bookstore.NovelStatistics ns = store.new NovelStatistics();
         double avgTitleLength = ns.averageTitleLength();
         System.out.println("Average title length: " + avgTitleLength);
+
+        // Using a constructor reference
+        Function<String, Bookstore> s2 = (name) -> new Bookstore(name);
+        Bookstore store2 = s2.apply("Another Bookstore");
+
+        Function<String, Novel> b1 = (name) -> new Novel(name);
+        store2.addItem(b1.apply("How to write method references"));
+
+        Function<String, ComicBook> b2 = (name) -> new ComicBook(name);
+        store2.addItem(b2.apply("How to program"));
+
+        Function<String, Magazine> b3 = (name) -> new Magazine(name);
+        store2.addItem(b3.apply("Java: The best coding language"));
+
+        store2.printItems();
     }
 
     // OTHER METHODS
@@ -49,14 +69,20 @@ public class Bookstore<T extends Literature> {
     }
 
     public void printBooks(BookFilter filter) {
-        System.out.println("\n----printBooks()----");
-        for (T item: items) {
-            if (filter.filter(item)) {
-                System.out.println(item);
-            }
+        Consumer<T> bookConsumer = book -> {
+            if (filter.filter(book))
+                System.out.println(book);
+        };
+        items.forEach(bookConsumer);
+
+//        System.out.println("\n----printBooks()----");
+//        for (T item: items) {
+//            if (filter.filter(item)) {
+//                System.out.println(item);
+//            }
+//        }
         }
 
-    }
 
     public void printItems() {
 
@@ -67,7 +93,7 @@ public class Bookstore<T extends Literature> {
     public void printBookTitle(final String title) {
         items.forEach(item -> {
             if (item.getTitle().contains(title)) {
-                System.out.println(item.getTitle());
+                System.out.println("📖 "  + item.getTitle());
             }
         });
     }
@@ -75,7 +101,7 @@ public class Bookstore<T extends Literature> {
     public void printTitlesInAlphaOrder() {
         System.out.println("\n----printTitlesInAlphaOrder()----");
         items.sort(Comparator.comparing(T::getTitle));
-        items.forEach(item -> System.out.println(item.getTitle()));
+        items.forEach(item -> System.out.println("📖 "  + item.getTitle()));
     }
 
     /**
