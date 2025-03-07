@@ -33,7 +33,7 @@ public class Bookstore<T extends Literature> {
 
         //fn should only return "National Geographic" and "Spider-Man" since "N" and "S" are before "T"
         System.out.printf("\nThe following 2 lines should only show " +
-                "\"National Geographic\" and \"Spider-Man\".\n");
+                "\"National Geographic\" and \"Spider-Man\".");
         store.printBooks(book -> book.getTitle().compareTo("Times Magazine") < 1);
 
         // Create a List to hold Novel objects
@@ -52,31 +52,34 @@ public class Bookstore<T extends Literature> {
         System.out.println();
 
         // Using a constructor reference
-//        Function<String, Bookstore> s2 = (name) -> new Bookstore(name);
-//        Bookstore store2 = s2.apply("Another Bookstore");
-//
-//        Function<String, Novel> b1 = (name) -> new Novel(name);
-//        store2.addItem(b1.apply("How to write method references"));
-//
-//        Function<String, ComicBook> b2 = (name) -> new ComicBook(name);
-//        store2.addItem(b2.apply("How to program"));
-//
-//        Function<String, Magazine> b3 = (name) -> new Magazine(name);
-//        store2.addItem(b3.apply("Java: The best coding language"));
-//
-//        Function<String, Magazine> b4 = (name) -> new Magazine(name);
-//        store2.addItem(b4.apply("abcde"));
-//
-//        Function<String, Magazine> b5 = (name) -> new Magazine(name);
-//        store2.addItem(b5.apply("zyx"));
+        Function<String, Bookstore> s2 = (name) -> new Bookstore(name);
+        Bookstore store2 = s2.apply("Another Bookstore");
 
-//        System.out.println("The following are books created " +
-//                "using a constructor reference.");
-//        store2.printItems();
-//
-//        System.out.println();
-//        Bookstore.NovelStatistics ns2 = store2.new NovelStatistics();
-//        ns2.sortByTitle();
+        Function<String, Novel> b1 = (name) -> new Novel(name, 1950);
+        store2.addItem(b1.apply("How to write method references"));
+
+        Function<String, ComicBook> b2 = (name) -> new ComicBook(name,1948);
+        store2.addItem(b2.apply("How to program"));
+
+        Function<String, Magazine> b3 = ( name) -> new Magazine(name,2000);
+        store2.addItem(b3.apply("Java: The best coding language"));
+
+        Function<String, Magazine> b4 = (name) -> new Magazine(name,2001);
+        store2.addItem(b4.apply("abcde"));
+
+        Function<String, Magazine> b5 = (name) -> new Magazine(name,1800);
+        store2.addItem(b5.apply("zyx"));
+
+        System.out.println("The following are books created " +
+                "using a constructor reference.");
+        store2.printItems();
+
+        System.out.println("The following should only print literature written before 1950.");
+        store.printBooks(book -> book.getYearPublished() < 1950);
+
+        System.out.println();
+        Bookstore.NovelStatistics ns2 = store2.new NovelStatistics();
+        ns2.sortByTitleLength();
     }
 
     // OTHER METHODS
