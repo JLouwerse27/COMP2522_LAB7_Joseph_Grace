@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -10,7 +11,7 @@ import java.util.function.Predicate;
  * @author ...
  * @version ...
  */
-public class Bookstore<T extends Literature> {
+public class Bookstore<T extends Literature>{
     private List<T> items = new ArrayList<>();
     private String name;
 
@@ -30,6 +31,7 @@ public class Bookstore<T extends Literature> {
         store.printItems(); // Should print titles from different item types
         store.printBookTitle("Random book title");
         store.printTitlesInAlphaOrder();
+
         //fn should only return "National Geographic" and "Spider-Man" since "N" and "S" are before "T"
         System.out.printf("\nThe following 2 lines should only show " +
                 "\"National Geographic\" and \"Spider-Man\".\n");
@@ -63,9 +65,19 @@ public class Bookstore<T extends Literature> {
         Function<String, Magazine> b3 = (name) -> new Magazine(name);
         store2.addItem(b3.apply("Java: The best coding language"));
 
+        Function<String, Magazine> b4 = (name) -> new Magazine(name);
+        store2.addItem(b4.apply("abcde"));
+
+        Function<String, Magazine> b5 = (name) -> new Magazine(name);
+        store2.addItem(b5.apply("zyx"));
+
         System.out.println("The following are books created " +
                 "using a constructor reference.");
         store2.printItems();
+
+        System.out.println();
+        Bookstore.NovelStatistics ns2 = store2.new NovelStatistics();
+        ns2.sortByTitle();
     }
 
     // OTHER METHODS
@@ -74,6 +86,7 @@ public class Bookstore<T extends Literature> {
     }
 
     public void printBooks(BookFilter filter) {
+        System.out.println();
         Consumer<T> bookConsumer = book -> {
             if (filter.filter(book))
                 System.out.println(book);
@@ -128,7 +141,9 @@ public class Bookstore<T extends Literature> {
     class NovelStatistics {
         public void sortByTitle() {
 
+            System.out.println("The following books are sorted by title length.");
             items.sort(Comparator.comparing(T::getTitle));
+            items.forEach(System.out::println);
 
         }
 

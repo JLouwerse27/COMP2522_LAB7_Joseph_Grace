@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Bookstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Bookstore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +99,7 @@
       <updated>1741212111098</updated>
       <workItem from="1741319623414" duration="4398000" />
       <workItem from="1741380669425" duration="304000" />
-      <workItem from="1741383204656" duration="333000" />
+      <workItem from="1741383204656" duration="2674000" />
     </task>
     <servers />
   </component>
