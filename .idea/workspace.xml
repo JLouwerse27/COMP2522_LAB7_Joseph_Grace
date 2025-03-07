@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f04cd66-a10c-43f2-8444-14b372564a19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$BookstoreInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore$NovelStatistics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Bookstore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP2522_LAB7_Joseph_Grace/Novel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Bookstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Bookstore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +26,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JLouwerse27/COMP2522_LAB7_Joseph_Grace.git",
-    "accountId": "7a2a5674-04e1-467c-9427-19016aac2a96"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JLouwerse27/COMP2522_LAB7_Joseph_Grace.git&quot;,
+    &quot;accountId&quot;: &quot;7a2a5674-04e1-467c-9427-19016aac2a96&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -44,28 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Bookstore.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josep/Documents/New Github/COMP2522_LAB7_Joseph_Grace",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.22398844",
-    "project.structure.side.proportion": "0.19185282",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Bookstore.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josep/Documents/New Github/COMP2522_LAB7_Joseph_Grace&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.22398844&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19185282&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Bookstore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="22" />
@@ -98,7 +94,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741212111098</updated>
-      <workItem from="1741319623414" duration="3969000" />
+      <workItem from="1741319623414" duration="4398000" />
+      <workItem from="1741380669425" duration="304000" />
+      <workItem from="1741383204656" duration="333000" />
     </task>
     <servers />
   </component>

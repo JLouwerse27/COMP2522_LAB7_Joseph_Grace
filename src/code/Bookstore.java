@@ -31,6 +31,8 @@ public class Bookstore<T extends Literature> {
         store.printBookTitle("Random book title");
         store.printTitlesInAlphaOrder();
         //fn should only return "National Geographic" and "Spider-Man" since "N" and "S" are before "T"
+        System.out.printf("\nThe following 2 lines should only show " +
+                "\"National Geographic\" and \"Spider-Man\".\n");
         store.printBooks(book -> book.getTitle().compareTo("Times Magazine") < 1);
 
         // Create a List to hold Novel objects
@@ -46,6 +48,7 @@ public class Bookstore<T extends Literature> {
         Bookstore.NovelStatistics ns = store.new NovelStatistics();
         double avgTitleLength = ns.averageTitleLength();
         System.out.println("Average title length: " + avgTitleLength);
+        System.out.println();
 
         // Using a constructor reference
         Function<String, Bookstore> s2 = (name) -> new Bookstore(name);
@@ -60,6 +63,8 @@ public class Bookstore<T extends Literature> {
         Function<String, Magazine> b3 = (name) -> new Magazine(name);
         store2.addItem(b3.apply("Java: The best coding language"));
 
+        System.out.println("The following are books created " +
+                "using a constructor reference.");
         store2.printItems();
     }
 
